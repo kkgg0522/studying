@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ItemRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ItemRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/hello.itemservice.domain.html">hello.itemservice.domain</a> &gt; ItemRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.734s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="findItems()"></a>
+<h3 class="failures">findItems()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expecting actual:
+  [Item(id=1, itemName=itemA, price=10000, quantity=30),
+    Item(id=2, itemName=itemB, price=20000, quantity=20),
+    Item(id=3, itemName=itemA4, price=10000, quantity=10),
+    Item(id=4, itemName=itemB, price=20000, quantity=20),
+    Item(id=5, itemName=1, price=1, quantity=1),
+    Item(id=6, itemName=itemA, price=10000, quantity=10),
+    Item(id=7, itemName=itemB, price=20000, quantity=20),
+    Item(id=8, itemName=123, price=123, quantity=123),
+    Item(id=9, itemName=itemA, price=10000, quantity=10),
+    Item(id=10, itemName=itemB, price=20000, quantity=20),
+    Item(id=11, itemName=itemA, price=10000, quantity=10),
+    Item(id=12, itemName=itemB, price=20000, quantity=20),
+    Item(id=13, itemName=item2, price=20000, quantity=30),
+    Item(id=14, itemName=itemA, price=10000, quantity=10),
+    Item(id=15, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=16, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=17, itemName=itemB-1, price=30000, quantity=30),
+    Item(id=18, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=19, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=20, itemName=itemB-1, price=30000, quantity=30),
+    Item(id=21, itemName=item2, price=20000, quantity=30),
+    Item(id=22, itemName=itemA, price=10000, quantity=10),
+    Item(id=23, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=24, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=25, itemName=itemB-1, price=30000, quantity=30),
+    Item(id=26, itemName=item2, price=20000, quantity=30),
+    Item(id=27, itemName=itemA, price=10000, quantity=10),
+    Item(id=28, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=29, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=30, itemName=itemB-1, price=30000, quantity=30)]
+to contain exactly (and in same order):
+  [Item(id=28, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=29, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=30, itemName=itemB-1, price=30000, quantity=30)]
+but some elements were not expected:
+  [Item(id=1, itemName=itemA, price=10000, quantity=30),
+    Item(id=2, itemName=itemB, price=20000, quantity=20),
+    Item(id=3, itemName=itemA4, price=10000, quantity=10),
+    Item(id=4, itemName=itemB, price=20000, quantity=20),
+    Item(id=5, itemName=1, price=1, quantity=1),
+    Item(id=6, itemName=itemA, price=10000, quantity=10),
+    Item(id=7, itemName=itemB, price=20000, quantity=20),
+    Item(id=8, itemName=123, price=123, quantity=123),
+    Item(id=9, itemName=itemA, price=10000, quantity=10),
+    Item(id=10, itemName=itemB, price=20000, quantity=20),
+    Item(id=11, itemName=itemA, price=10000, quantity=10),
+    Item(id=12, itemName=itemB, price=20000, quantity=20),
+    Item(id=13, itemName=item2, price=20000, quantity=30),
+    Item(id=14, itemName=itemA, price=10000, quantity=10),
+    Item(id=15, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=16, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=17, itemName=itemB-1, price=30000, quantity=30),
+    Item(id=18, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=19, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=20, itemName=itemB-1, price=30000, quantity=30),
+    Item(id=21, itemName=item2, price=20000, quantity=30),
+    Item(id=22, itemName=itemA, price=10000, quantity=10),
+    Item(id=23, itemName=itemA-1, price=10000, quantity=10),
+    Item(id=24, itemName=itemA-2, price=20000, quantity=20),
+    Item(id=25, itemName=itemB-1, price=30000, quantity=30),
+    Item(id=26, itemName=item2, price=20000, quantity=30),
+    Item(id=27, itemName=itemA, price=10000, quantity=10)]
+
+	at hello.itemservice.domain.ItemRepositoryTest.test(ItemRepositoryTest.java:90)
+	at hello.itemservice.domain.ItemRepositoryTest.findItems(ItemRepositoryTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">findItems()</td>
+<td class="failures">0.181s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">save()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateItem()</td>
+<td class="success">1.536s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:58:51.931 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:58:51.956 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:58:52.016 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [hello.itemservice.domain.ItemRepositoryTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:58:52.038 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.itemservice.domain.ItemRepositoryTest], using SpringBootContextLoader
+19:58:52.046 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.itemservice.domain.ItemRepositoryTest]: class path resource [hello/itemservice/domain/ItemRepositoryTest-context.xml] does not exist
+19:58:52.047 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [hello.itemservice.domain.ItemRepositoryTest]: class path resource [hello/itemservice/domain/ItemRepositoryTestContext.groovy] does not exist
+19:58:52.047 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [hello.itemservice.domain.ItemRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:58:52.048 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [hello.itemservice.domain.ItemRepositoryTest]: ItemRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:58:52.123 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [hello.itemservice.domain.ItemRepositoryTest]
+19:58:52.233 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\workspace\itemservice-db\build\classes\java\main\hello\itemservice\ItemServiceApplication.class]
+19:58:52.237 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration hello.itemservice.ItemServiceApplication for test class hello.itemservice.domain.ItemRepositoryTest
+19:58:52.409 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [hello.itemservice.domain.ItemRepositoryTest]: using defaults.
+19:58:52.410 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:58:52.439 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45be7cd5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7651218e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3185fa6b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6d366c9b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5b58ed3c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24faea88, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a320ade, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@64beebb7, org.springframework.test.context.event.EventPublishingTestExecutionListener@7813cb11, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@bcec031, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@21005f6c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32f0fba8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@545de5a4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@29ef6856, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ab7a938]
+19:58:52.445 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4ebea12c testClass = ItemRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2a1edad4 testClass = ItemRepositoryTest, locations = '{}', classes = '{class hello.itemservice.ItemServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3a4621bd, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6e4566f1, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@648c94da, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@535779e4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25aca718, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@247d8ae], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.5)
+
+2024-05-09 19:58:52.979  INFO 15632 --- [    Test worker] h.itemservice.domain.ItemRepositoryTest  : Starting ItemRepositoryTest using Java 17.0.11 on LAPTOP-KJ22PVAJ with PID 15632 (started by kkgg0 in E:\workspace\itemservice-db)
+2024-05-09 19:58:52.981 DEBUG 15632 --- [    Test worker] h.itemservice.domain.ItemRepositoryTest  : Running with Spring Boot v2.6.5, Spring v5.3.17
+2024-05-09 19:58:52.982  INFO 15632 --- [    Test worker] h.itemservice.domain.ItemRepositoryTest  : The following 1 profile is active: &quot;test&quot;
+2024-05-09 19:58:55.724  INFO 15632 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-05-09 19:58:56.319  INFO 15632 --- [    Test worker] h.itemservice.domain.ItemRepositoryTest  : Started ItemRepositoryTest in 3.814 seconds (JVM running for 5.721)
+2024-05-09 19:58:57.342 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.344  INFO 15632 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09 19:58:57.623  INFO 15632 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09 19:58:57.638 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt;  Preparing: INSERT INTO item (item_name, price, quantity) VALUES (?,?,?)
+2024-05-09 19:58:57.682 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt; Parameters: item1(String), 10000(Integer), 10(Integer)
+2024-05-09 19:58:57.688 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : &lt;==    Updates: 1
+2024-05-09 19:58:57.707 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.708 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.update          : ==&gt;  Preparing: UPDATE item SET item_name=?, price=?, quantity=?, id=? WHERE id = ?
+2024-05-09 19:58:57.711 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.update          : ==&gt; Parameters: item2(String), 20000(Integer), 30(Integer), 26(Long), 26(Long)
+2024-05-09 19:58:57.712 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.update          : &lt;==    Updates: 1
+2024-05-09 19:58:57.716 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.717 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : ==&gt;  Preparing: SELECT id, item_name, price, quantity FROM item WHERE id = ?
+2024-05-09 19:58:57.718 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : ==&gt; Parameters: 26(Long)
+2024-05-09 19:58:57.732 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : &lt;==    Columns: ID, ITEM_NAME, PRICE, QUANTITY
+2024-05-09 19:58:57.733 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : &lt;==        Row: 26, item2, 20000, 30
+2024-05-09 19:58:57.735 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : &lt;==      Total: 1
+2024-05-09 19:58:57.894 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.894 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt;  Preparing: INSERT INTO item (item_name, price, quantity) VALUES (?,?,?)
+2024-05-09 19:58:57.895 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt; Parameters: itemA(String), 10000(Integer), 10(Integer)
+2024-05-09 19:58:57.896 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : &lt;==    Updates: 1
+2024-05-09 19:58:57.897 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.898 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : ==&gt;  Preparing: SELECT id, item_name, price, quantity FROM item WHERE id = ?
+2024-05-09 19:58:57.899 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : ==&gt; Parameters: 27(Long)
+2024-05-09 19:58:57.901 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : &lt;==    Columns: ID, ITEM_NAME, PRICE, QUANTITY
+2024-05-09 19:58:57.901 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : &lt;==        Row: 27, itemA, 10000, 10
+2024-05-09 19:58:57.901 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findById        : &lt;==      Total: 1
+2024-05-09 19:58:57.915 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.916 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt;  Preparing: INSERT INTO item (item_name, price, quantity) VALUES (?,?,?)
+2024-05-09 19:58:57.917 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt; Parameters: itemA-1(String), 10000(Integer), 10(Integer)
+2024-05-09 19:58:57.918 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : &lt;==    Updates: 1
+2024-05-09 19:58:57.919 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.919 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt;  Preparing: INSERT INTO item (item_name, price, quantity) VALUES (?,?,?)
+2024-05-09 19:58:57.920 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt; Parameters: itemA-2(String), 20000(Integer), 20(Integer)
+2024-05-09 19:58:57.921 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : &lt;==    Updates: 1
+2024-05-09 19:58:57.922 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.922 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt;  Preparing: INSERT INTO item (item_name, price, quantity) VALUES (?,?,?)
+2024-05-09 19:58:57.923 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : ==&gt; Parameters: itemB-1(String), 30000(Integer), 30(Integer)
+2024-05-09 19:58:57.925 DEBUG 15632 --- [    Test worker] h.i.repository.mybatis.ItemMapper.save   : &lt;==    Updates: 1
+2024-05-09 19:58:57.994 DEBUG 15632 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2024-05-09 19:58:57.995 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : ==&gt;  Preparing: SELECT id, item_name, price, quantity from Item
+2024-05-09 19:58:57.997 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : ==&gt; Parameters: 
+2024-05-09 19:58:58.002 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==    Columns: ID, ITEM_NAME, PRICE, QUANTITY
+2024-05-09 19:58:58.002 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 1, itemA, 10000, 30
+2024-05-09 19:58:58.003 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 2, itemB, 20000, 20
+2024-05-09 19:58:58.003 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 3, itemA4, 10000, 10
+2024-05-09 19:58:58.004 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 4, itemB, 20000, 20
+2024-05-09 19:58:58.005 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 5, 1, 1, 1
+2024-05-09 19:58:58.006 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 6, itemA, 10000, 10
+2024-05-09 19:58:58.007 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 7, itemB, 20000, 20
+2024-05-09 19:58:58.007 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 8, 123, 123, 123
+2024-05-09 19:58:58.008 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 9, itemA, 10000, 10
+2024-05-09 19:58:58.009 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 10, itemB, 20000, 20
+2024-05-09 19:58:58.010 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 11, itemA, 10000, 10
+2024-05-09 19:58:58.012 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 12, itemB, 20000, 20
+2024-05-09 19:58:58.012 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 13, item2, 20000, 30
+2024-05-09 19:58:58.013 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 14, itemA, 10000, 10
+2024-05-09 19:58:58.016 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 15, itemA-1, 10000, 10
+2024-05-09 19:58:58.017 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 16, itemA-2, 20000, 20
+2024-05-09 19:58:58.018 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 17, itemB-1, 30000, 30
+2024-05-09 19:58:58.018 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 18, itemA-1, 10000, 10
+2024-05-09 19:58:58.019 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 19, itemA-2, 20000, 20
+2024-05-09 19:58:58.020 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 20, itemB-1, 30000, 30
+2024-05-09 19:58:58.021 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 21, item2, 20000, 30
+2024-05-09 19:58:58.022 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 22, itemA, 10000, 10
+2024-05-09 19:58:58.022 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 23, itemA-1, 10000, 10
+2024-05-09 19:58:58.023 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 24, itemA-2, 20000, 20
+2024-05-09 19:58:58.023 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 25, itemB-1, 30000, 30
+2024-05-09 19:58:58.024 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 26, item2, 20000, 30
+2024-05-09 19:58:58.024 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 27, itemA, 10000, 10
+2024-05-09 19:58:58.026 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 28, itemA-1, 10000, 10
+2024-05-09 19:58:58.027 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 29, itemA-2, 20000, 20
+2024-05-09 19:58:58.027 TRACE 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==        Row: 30, itemB-1, 30000, 30
+2024-05-09 19:58:58.027 DEBUG 15632 --- [    Test worker] h.i.r.mybatis.ItemMapper.findAll         : &lt;==      Total: 30
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at 2024. 5. 9. 오후 7:58:58</p>
+</div>
+</div>
+</body>
+</html>
