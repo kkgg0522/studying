@@ -19,8 +19,9 @@
 > >  /typeconverter - 컨버터와 포매터   
 > >  /fileUpload - 파일 업로드 및 다운로드   
 
-> /springdb1   
-> >  /jdbc - 기본 jdbc부터 시작해 스프링이 이를 어떻게 해결하는가? -- 개념위주 ( tan-sog.tistory.com/164 ) ~   
+> >  springdb1 - /jdbc - 기본 jdbc부터 시작해 스프링이 이를 어떻게 해결하는가? -- 개념위주 ( tan-sog.tistory.com/164 ) ~   
   
-> /springdb2   
+> /springdb2
+> >  /itemservice-db - DB 접근 기술 기초
+> >  /springtx - Spring @Transactional 기본 개념과 활용 ( tan-sog.tistory.com/193 ) 
     
